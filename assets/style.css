@@ -1,86 +1,117 @@
-* {
+*,
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-}
-
-header {
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('../img/website_medium.jpg');
-    background-size: cover;
-    height: 97.1vh;
-}
-
-#nav_bar {
-    width: 100%;
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#nav_bar #img_content img {
+.logo img {
     width: 20%;
 }
 
-#nav_bar button {
-    background-color: rgb(211, 2, 2);
-    width: 200px;
-    text-align: center;
-    font-size: 18px;
-    border: none;
-    border-radius: 2px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+/* Header styling
+  ================================== */
+header {
+    background: transparent;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
 }
 
-#nav_bar button a {
+header .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-wrapper .sign-btn {
     text-decoration: none;
     color: white;
+    background-color: red;
+    width: 16.2rem;
+    text-align: center;
+    padding: 8px;
+    position: relative;
+    top: -2px;
 }
 
-#container #text {
+.hero-section {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.829), rgba(13, 13, 13, 0.582), rgba(0, 0, 0, 0.706)), url('../img/website_medium.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
-    position: relative;
-    top: 100px;
-
 }
 
-#text div h1 {
-    font-size: 36px;
-    font-weight: 200px;
+.hero-section .content {
+    width: 50%;
+    color: #fff;
 }
 
-#text div p {
-    font-size: 16px;
-    padding: 16px;
-    word-spacing: 3px;
-    letter-spacing: 1px;
-
+.hero-section h1 {
+    font-size: 3rem;
 }
 
-#container #text button {
-    background-color: rgb(211, 2, 2);
-    border: none;
-    color: white;
-    padding: 16px;
+.form-control {
+    margin-top: 1rem;
 }
 
-#email {
-    margin-right: 0;
-    padding: 16px;
-    width: 284px;
+.input-control {
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.input-control input {
+    width: 80%;
+    padding: 0.6rem 1rem;
     border: none;
     outline: none;
+    color: #333;
+}
+
+.input-control .hero-btn {
+    background: red;
+    color: #fff;
+    white-space: nowrap;
+    padding: 0.6rem 2rem;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.hero-btn p {
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .input-control {
+        flex-direction: column;
+    }
+
+
+    .hero-section .content {
+        width: 80%;
+        color: #fff;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .input-control input {
+        width: 100%;
+    }
+
+    .input-control .hero-btn {
+        padding: 0.6rem 1rem;
+        margin-top: 1rem;
+    }
 }

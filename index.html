@@ -7,34 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix_landing_page</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://kit.fontawesome.com/1e252d778c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div id="container">
-
-            <div id="nav_bar">
-                <div id="img_content">
-                    <img src="./img/Logonetflix.png" alt="netflix_logo">
-                </div>
-                <button><a href="https://www.netflix.com/ng/login" alt="sign In">Sign In</a></button>
+        <div class="header-wrapper">
+            <div class="logo">
+                <img src="./img/Logonetflix.png" alt="netflix_logo">
             </div>
-
-            <div id="text">
-                <div>
-                    <h1>Unlimited movies, TV<br />shows, and more.</h1>
-                </div>
-                <div>
-                    <p>Watch anywhere. Cancel anytime.</p>
-                    <p>Ready to watch? Enter your<br />email to create or restart your<br />membership.</p>
-                    <form>
-                        <input type="email" name="email" id="email" placeholder="Email address" required>
-                        <button>Get Started ></button>
-                    </form>
-                </div>
-            </div>
+            <a href="https://www.netflix.com/ng/login" class="sign-btn">Sign in</a>
         </div>
     </header>
+
+    <!-- Hero Section
+  ============================================ -->
+    <section class="hero-section">
+        <div class="content">
+            <div class="hero-text">
+                <h1>Unlimited movies, TV shows, and more.</h1>
+                <p>Watch anywhere. Cancel anytime.</p>
+            </div>
+            <form>
+                <div class="form-control">
+                    <label for="email">Ready to watch? Enter your email to create or restart your membership.</label>
+                    <div class="input-control">
+                        <input type="email" name="email" placeholder="Enter email">
+                        <button type="submit" class="hero-btn">
+                            <p>Get started</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
 
 </html>
