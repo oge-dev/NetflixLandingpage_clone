@@ -6,16 +6,20 @@ html {
 }
 
 body {
-    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+        sans-serif;
     max-width: 100%;
 }
-
 
 /* Header styling
   ================================== */
 header {
     padding: 1rem 0 8rem;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.829), rgba(13, 13, 13, 0.582), rgba(0, 0, 0, 0.706)), url('../img/website_medium.jpg');
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.829),
+            rgba(13, 13, 13, 0.582),
+            rgba(0, 0, 0, 0.706)),
+        url("../img/website_medium.jpg");
     background-position: center;
     background-size: cover;
 
@@ -48,6 +52,7 @@ header .header-wrapper {
     border-radius: 3px;
 }
 
+/* Hero Section */
 .hero-section {
     display: flex;
     justify-content: center;
@@ -70,7 +75,6 @@ header .header-wrapper {
 }
 
 .input-control {
-    /* background: red; */
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -99,6 +103,7 @@ header .header-wrapper {
     margin-right: 1rem;
 }
 
+/* Enjoy on your TV. styling */
 .enjoy-section {
     display: flex;
     flex-direction: row;
@@ -128,19 +133,19 @@ header .header-wrapper {
 
 @keyframes tv {
     0% {
-        background-image: url('../img/website_medium.jpg');
+        background-image: url("../img/website_medium.jpg");
     }
 
     25% {
-        background-image: url('../img/kid.png');
+        background-image: url("../img/kid.png");
     }
 
     50% {
-        background-image: url('../img/website_medium.jpg');
+        background-image: url("../img/website_medium.jpg");
     }
 
     100% {
-        background-image: url('../img/mobile-0819.jpg');
+        background-image: url("../img/mobile-0819.jpg");
     }
 }
 
@@ -154,6 +159,7 @@ header .header-wrapper {
     background-position: center;
 }
 
+/* Download your shows to watch offline. styling */
 .Download-content img {
     width: 480px;
     height: 360px;
@@ -193,6 +199,7 @@ header .header-wrapper {
     color: blue;
 }
 
+/* Watch everywhere.. section styling */
 .watch-section {
     max-width: 100%;
     background-color: black;
@@ -215,16 +222,15 @@ header .header-wrapper {
     font-weight: 400;
 }
 
+/* Enjoy on your TV. kids section- css */
 .kid-content img {
     width: 390.72px;
     height: 293.03px;
     border: none;
 }
 
-.fAQ {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Frequently Asked Questions section styling */
+.fAQ-section {
     height: auto;
     max-width: 100%;
     background-color: black;
@@ -234,15 +240,18 @@ header .header-wrapper {
 }
 
 .fAQ-content {
-    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 90%;
 }
 
-.fAQ h1 {
-    text-align: center;
+.fAQ-section h1 {
     font-size: 50px;
     font-weight: 500;
-    margin-bottom: 4rem;
-    max-width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .fAQ-item {
@@ -251,25 +260,65 @@ header .header-wrapper {
     background-color: #303030;
     margin-bottom: 8px;
     padding: 0.8em 2.2em 0.8em 1.2em;
-    position: relative;
-    max-width: 100%;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.fAQ-item span {
-    width: 24px;
-    height: 24px;
-    font-size: 16px;
-    font-weight: lighter;
+.fAQ-item i {
+    width: 25px;
+    height: 25px;
 }
 
-.fAQ .form-control {
-    padding-top: 38px;
+.fAQ-section .form-control {
     text-align: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 50%;
 }
 
+/* footer styling */
+footer {
+    font-size: 14px;
+    height: auto;
+    max-width: 100%;
+    background-color: black;
+    color: #777;
+    padding: 60px 0;
+}
+
+.footer-content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+footer h3 {
+    margin-bottom: 1.8rem;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #777;
+    justify-content: center;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .nig {
+    margin-top: 1.8rem;
+}
+
+/* the styling displays when the screen width is less than or equal to 768px */
 @media screen and (max-width: 768px) {
     header {
         height: auto;
@@ -286,7 +335,6 @@ header .header-wrapper {
     .input-control {
         flex-direction: column;
     }
-
 
     .hero-section .content {
         width: 80%;
@@ -336,6 +384,38 @@ header .header-wrapper {
     .kid-content img {
         width: 322px;
         height: 222px;
-        border: none;
+    }
+
+    .fAQ-content {
+        max-width: 100%;
+    }
+
+    .fAQ-section {
+        padding: 30px 15px;
+    }
+
+    .fAQ-item {
+        font-size: 18px;
+    }
+
+    .fAQ-section h1 {
+        font-size: 30px;
+    }
+
+    .fAQ-section .form-control {
+        width: 80%;
+    }
+
+    footer {
+        padding: 50px 28px;
+    }
+
+    .footer-content {
+        width: 90%;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 12px;
     }
 }
