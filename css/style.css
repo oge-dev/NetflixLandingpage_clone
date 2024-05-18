@@ -106,7 +106,7 @@ header .header-wrapper {
 .input-control input {
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.5);
-  border: 1.5px solid #808080;
+  border: 1.5px solid #999;
   color: #ffffff;
   outline: none;
   line-height: 1.5;
@@ -154,29 +154,33 @@ header .header-wrapper {
 /* Enjoy on your TV. styling */
 .enjoy-section {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  height: auto;
-  max-width: 100%;
+  justify-content: center;
   background-color: black;
   border-bottom: 8px solid #222;
   color: #fff;
-  padding: 60px 35px;
+  padding: 4.5rem 0;
+ 
 }
-
+.enjoy-content{
+  max-width: calc(83.33333333333334% - 6rem);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .enjoy-text {
-  width: 50%;
+  /* width: 552px;
+  height: 162px; */
 }
 
 .enjoy-text h1 {
-  font-size: 46px;
-  font-weight: 800;
+  font-size: 3rem;
+    font-weight: 900;
 }
 
 .enjoy-text p {
-  font-size: 26px;
-  font-weight: 400;
+  font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem 0 0;
 }
 
 @keyframes tv {
@@ -196,10 +200,14 @@ header .header-wrapper {
     background-image: url("../img/mobile-0819.jpg");
   }
 }
+.tv-content{
+  padding-left: 0.375rem;
+  z-index: 1;
+}
 
 .tv-content img {
-  width: 480px;
-  height: 350px;
+  width: 546px;
+  height: 410px;
   border: none;
   animation: tv 4s linear 0.1s infinite alternate both;
   background-color: transparent;
@@ -410,7 +418,7 @@ footer .nig {
   .hero-btn i {
     font-size: 1rem;
   }
-  .enjoy-section {
+  .enjoy-content {
     flex-direction: column;
   }
 
