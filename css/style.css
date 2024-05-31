@@ -21,7 +21,7 @@ header {
       rgba(13, 13, 13, 0.582),
       rgba(0, 0, 0, 0.706)
     ),
-    url("../img/website_medium.jpg");
+    url("../assets/img/website_medium.jpg");
   background-position: center;
   background-size: cover;
   /* height: 100vh; */
@@ -159,9 +159,8 @@ header .header-wrapper {
   border-bottom: 8px solid #222;
   color: #fff;
   padding: 4.5rem 0;
- 
 }
-.enjoy-content{
+.enjoy-content {
   max-width: calc(83.33333333333334% - 6rem);
   display: flex;
   flex-direction: row;
@@ -170,35 +169,35 @@ header .header-wrapper {
 
 .enjoy-text h1 {
   font-size: 3rem;
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .enjoy-text p {
   font-size: 1.5rem;
-    font-weight: 400;
-    margin: 1rem 0 0;
+  font-weight: 400;
+  margin: 1rem 0 0;
 }
 
 @keyframes tv {
   0% {
-    background-image: url("../img/movies/movies2.jpg");
+    background-image: url("../assets/img/movies/movies2.jpg");
   }
   25% {
-    background-image: url("../img/movies/movies4.jpg");
+    background-image: url("../assets/img/movies/movies4.jpg");
   }
   50% {
-    background-image: url("../img/movies/black-adam.jpg");
+    background-image: url("../assets/img/movies/black-adam.jpg");
   }
 
   75% {
-    background-image: url("../img/movies/lift.jpg");
+    background-image: url("../assets/img/movies/lift.jpg");
   }
-  
+
   100% {
-    background-image: url("../img/movies/spider.jpg");
+    background-image: url("../assets/img/movies/spider.jpg");
   }
 }
-.tv-content{
+.tv-content {
   padding-left: 0.375rem;
   z-index: 1;
 }
@@ -213,123 +212,159 @@ header .header-wrapper {
 }
 
 /* Download your shows to watch offline. styling */
-.Download-content img {
-  width: 480px;
-  height: 360px;
-}
 
 .Download-content {
   position: relative;
 }
 
 .Download-content .stranger {
-  width: 54%;
+  max-width: 301px;
+  width: 301px;
+  height: 104px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: 248px;
-  left: 111px;
+  left: 125px;
+  bottom: 26px;
   border: 2px solid #222;
   background-color: black;
-  padding: 8px;
+  padding: 8px 12px;
   border-radius: 18px;
 }
-
-.stranger-text {
+.stranger-content {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  margin-left: 8px;
 }
-
-.stranger-text p {
-  font-size: 14px;
+.stranger-content h4 {
+  font-weight: 500;
+  font-size: 1rem;
+} 
+.stranger-content p {
+  color: #0071eb;
+  font-size: 0.875rem;
   font-weight: 400;
-  color: blue;
-}
+} 
 
 /* Watch everywhere.. section styling */
 .watch-section {
-  max-width: 100%;
   background-color: black;
   border-bottom: 8px solid #222;
   color: #fff;
-  padding: 60px 35px;
+  max-width: 100%;
+  padding: 4.5rem 0;
 }
 
 .watch-content {
-  max-width: 50%;
+  width: 50%;
+  padding-left: 16rem;
 }
 
 .watch-section h1 {
-  font-size: 46px;
-  font-weight: 800;
+  font-size: 3rem;
+  font-weight: 900;
 }
 
 .watch-section p {
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: 400;
+  margin: 1rem 0 0;
 }
 
 /* Enjoy on your TV. kids section- css */
 .kid-content img {
-  width: 390.72px;
-  height: 293.03px;
+  width: 474px;
+  height: 355.5px;
   border: none;
 }
 
 /* Frequently Asked Questions section styling */
 .fAQ-section {
-  height: auto;
-  max-width: 100%;
   background-color: black;
   border-bottom: 8px solid #222;
   color: #fff;
-  padding: 60px 35px;
+  padding: 4.5rem 0;
 }
-
 .fAQ-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  max-width: 90%;
+  max-width: calc(83.33333333333334% - 6rem);
 }
-
+.fAQ-items{
+    padding: 0;
+    z-index: 1;
+    width: 100%;
+}
 .fAQ-section h1 {
-  font-size: 50px;
-  font-weight: 500;
-  text-align: center;
-  margin-bottom: 30px;
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0.83em 0;
+}
+/* Style for the collapsible */
+.collapsible {
+  background-color: #f5f5f5;
+  color: #333;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  position: relative;
+}
+/* Style for the collapsible content */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #fff;
 }
 
+/* Style for the plus and minus icons */
+.icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+.icon.plus::before {
+  content: '+';
+}
+
+.icon.minus::before {
+  content: '-';
+}
 .fAQ-item {
-  font-size: 26px;
-  font-weight: 400;
-  background-color: #303030;
+  background-color: rgb(45, 45, 45);
   margin-bottom: 8px;
-  padding: 0.8em 2.2em 0.8em 1.2em;
+  padding: 1.5rem;
   align-items: center;
   text-align: left;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
+.fAQ-item span{
+  font-size: 24px;
+  font-weight: 400;
+}
 .fAQ-item i {
-  width: 25px;
-  height: 25px;
+  width: 36px;
+  height: 36px;
+  /* color: #ffffff; */
 }
 
 .fAQ-section .form-control {
   text-align: center;
-  margin: 0 auto;
   margin-top: 2rem;
-  width: 50%;
 }
 
 /* footer styling */
