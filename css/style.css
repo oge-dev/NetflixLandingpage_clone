@@ -243,12 +243,12 @@ header .header-wrapper {
 .stranger-content h4 {
   font-weight: 500;
   font-size: 1rem;
-} 
+}
 .stranger-content p {
   color: #0071eb;
   font-size: 0.875rem;
   font-weight: 400;
-} 
+}
 
 /* Watch everywhere.. section styling */
 .watch-section {
@@ -296,10 +296,10 @@ header .header-wrapper {
   margin: 0 auto;
   max-width: calc(83.33333333333334% - 6rem);
 }
-.fAQ-items{
-    padding: 0;
-    z-index: 1;
-    width: 100%;
+.fAQ-items {
+  padding: 0;
+  z-index: 1;
+  width: 100%;
 }
 .fAQ-section h1 {
   font-size: 3rem;
@@ -308,23 +308,41 @@ header .header-wrapper {
 }
 /* Style for the collapsible */
 .collapsible {
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: #2d2d2d;
+  color: #fff;
   cursor: pointer;
-  padding: 18px;
+  padding: 1.5rem;
   width: 100%;
   border: none;
+  border-bottom: 1px solid #000;
   text-align: left;
   outline: none;
-  font-size: 15px;
   position: relative;
+  z-index: 1;
+  margin-bottom: 10px; /* Add bottom margin to the collapsible */
 }
+
+.collapsible:hover {
+  background-color: #3d3d3d;
+}
+
 /* Style for the collapsible content */
 .content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #2d2d2d;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+  margin-top: -10px; /* Negative top margin to counteract the button's bottom margin */
+  margin-bottom: 10px;
+}
+/* Style for the collapsible heading */
+.collapsible span:nth-of-type(1) {
+  font-size: 24px;
+  font-weight: 400;
 }
 
 /* Style for the plus and minus icons */
@@ -333,33 +351,15 @@ header .header-wrapper {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 18px;
+  font-size: 36px;
 }
+
 .icon.plus::before {
-  content: '+';
+  content: "+";
 }
 
 .icon.minus::before {
-  content: '-';
-}
-.fAQ-item {
-  background-color: rgb(45, 45, 45);
-  margin-bottom: 8px;
-  padding: 1.5rem;
-  align-items: center;
-  text-align: left;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.fAQ-item span{
-  font-size: 24px;
-  font-weight: 400;
-}
-.fAQ-item i {
-  width: 36px;
-  height: 36px;
-  /* color: #ffffff; */
+  content: "x";
 }
 
 .fAQ-section .form-control {
