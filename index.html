@@ -13,7 +13,7 @@
     <link
       rel="icon"
       type="image/svg+xml"
-      href="./assets/icons/netflix-icon.png"
+      href="./assets/img/netflix-icon.png"
     />
   </head>
 
@@ -68,13 +68,14 @@
             players, and more.
           </p>
         </div>
+
         <div class="tv-container">
-          <!-- <img src="./assets/img/tv.png" class="tv-frame" alt="tv" /> -->
-          <div class="animation-video">
-            <video autoplay muted loop playsinline>
-              <source src="./assets/img/movies/video-tv.m4v" type="video/mp4" />
-              your broswer does not support the video tag
-            </video>
+          <video class="tv-video" autoplay muted loop>
+            <source src="./assets/video-tv.m4v" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="tv-frame">
+            <img src="./assets/img/tv.png" alt="TV Frame" />
           </div>
         </div>
       </div>
