@@ -24,12 +24,11 @@ header {
     url("../assets/img/website_medium.jpg");
   background-position: center;
   background-size: cover;
-  /* height: 100vh; */
   width: 100%;
   border-bottom: 8px solid #222;
 }
 
-header .header-wrapper {
+header .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,7 +41,7 @@ header .header-wrapper {
   height: 48px;
 }
 
-.header-wrapper .sign-btn {
+.header-content .sign-btn {
   text-decoration: none;
   color: #ffffff;
   background-color: #e50914;
@@ -57,7 +56,7 @@ header .header-wrapper {
   border-radius: 0.25rem;
   white-space: nowrap;
 }
-.header-wrapper .sign-btn:hover {
+.header-content .sign-btn:hover {
   background: #b8000a;
   transition-duration: 250ms;
 }
@@ -70,7 +69,7 @@ header .header-wrapper {
   text-align: center;
 }
 
-.hero-section .content {
+.hero-section .hero-content {
   color: #ffffff;
   padding: 200px;
 }
@@ -125,7 +124,7 @@ header .header-wrapper {
   font-weight: 400;
   font-size: 16px;
 }
-.input-control .hero-btn {
+.input-control .input-btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -142,13 +141,13 @@ header .header-wrapper {
   height: 56px;
 }
 
-.hero-btn p {
+.input-btn p {
   font-size: 1.5rem;
   font-weight: 500;
   user-select: none;
   padding-right: 0.5rem;
 }
-.hero-btn i {
+.input-btn i {
   font-size: 1.2rem;
 }
 /* Enjoy on your TV. styling */
@@ -301,7 +300,7 @@ header .header-wrapper {
   z-index: 1;
   width: 100%;
 }
-.fAQ-section h1 {
+.fAQ-content h1 {
   font-size: 3rem;
   font-weight: 900;
   margin: 0.83em 0;
@@ -441,7 +440,7 @@ footer .nig {
     width: 224px;
     height: 48px;
   }
-  .input-control .hero-btn {
+  .input-control .input-btn {
     height: 48px;
   }
   .hero-btn p {
@@ -475,6 +474,7 @@ footer .nig {
 
   .watch-content {
     max-width: 80%;
+    padding-left: 0;
   }
 
   .kid-content img {
