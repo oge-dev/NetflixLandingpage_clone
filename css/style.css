@@ -23,6 +23,7 @@ header {
     url("../assets/img/website_medium.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   border-bottom: 8px solid #222;
 }
@@ -37,7 +38,7 @@ header .header-content {
 }
 
 .logo img {
-  max-width: 158px;
+ width: 158px;
   height: 48px;
 }
 
@@ -45,7 +46,7 @@ header .header-content {
   text-decoration: none;
   color: #ffffff;
   background-color: #e50914;
-  max-width: 76.91px;
+  width: 76.91px;
   height: 32px;
   font-size: 14px;
   font-weight: 500;
@@ -55,14 +56,14 @@ header .header-content {
   user-select: none;
   border-radius: 0.25rem;
   white-space: nowrap;
-    font-size: 13px;
-    font-weight: 600;
+  font-size: 14px;
+  font-weight: 600;
 }
-.header-content .sign-btn::after{
+.header-content .sign-btn::after {
   border-width: 0.0625rem;
-    border-radius: calc(0.25rem - 0.0625rem);
-    content: '';
-    border-color: rgba(0, 0, 0, 0);
+  border-radius: calc(0.25rem - 0.0625rem);
+  content: "";
+  border-color: rgba(0, 0, 0, 0);
 }
 .header-content .sign-btn:hover {
   background: #b8000a;
@@ -409,11 +410,11 @@ footer .nig {
 /* the styling displays when the screen width is less than or equal to 768px */
 @media screen and (max-width: 768px) {
   header .header-content {
-    width: 100%;
+    width: inherit;
     padding: 1.5rem;
   }
   .logo img {
-    max-width: 98px;
+    width: 98px;
     height: 28px;
   }
   .hero-section .hero-content {
@@ -460,9 +461,9 @@ footer .nig {
     width: 280px;
   }
 
-  .enjoy-text {
-    /* width: 100%; */
-  }
+  /* .enjoy-text {
+    width: 100%;
+  } */
   .tv-frame {
     position: relative;
     width: 274px;
