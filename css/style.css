@@ -89,7 +89,7 @@ header .header-content {
   line-height: 1.8;
 }
 
-.hero-section p {
+.hero-section .hero-text p {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.8;
@@ -136,7 +136,7 @@ header .header-content {
 .input-control .input-btn {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background: #e50914;
   color: #fff;
@@ -148,9 +148,11 @@ header .header-content {
   border-radius: 0.25rem;
   width: 160.94px;
   height: 56px;
+  letter-spacing: normal;
+    line-height: 1
 }
 
-.input-btn p {
+.input-control .input-btn p {
   font-size: 1.5rem;
   font-weight: 500;
   user-select: none;
@@ -424,37 +426,55 @@ footer .nig {
   .hero-section .hero-content {
     width: 100%;
     padding: 0;
-    text-align: center;
+    
    
   }
   .hero-section h1 {
     font-size: 2rem;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
   }
-  .hero-section p {
-    font-size: 1.2rem;
-    line-height: 1.5;
+  .hero-section .hero-text p {
+    line-height: normal;
+    margin: 1rem 0 0;
+    font-size: 1.185rem;
+    font-weight: 400;
+  }
+  .form-control {
+    margin: 1.5rem 0 0;
+    
   }
   .form-control .form-headline {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+    max-width: 61.5rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    content: '1';
+    
   }
-  .input-control {
+  .form-control .input-control {
     flex-direction: column;
+    max-width: 61.5rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    content: '1';
+    margin: 1rem auto 0;
+    
+  
   }
 
   .input-control input {
-    width: 224px;
+    width: 100%;
+    max-width: 36.625rem;
     height: 48px;
   }
   .input-control .input-btn {
     height: 48px;
-  }
-  .hero-btn p {
-    font-size: 1.2rem;
+  font-size: 1rem;
+    margin-top: 1rem;
   }
   .hero-btn i {
     font-size: 1rem;
