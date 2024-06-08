@@ -12,6 +12,7 @@
 ## Overview
 
 ### The challenge
+
 Your challenge is to clone Netflix Landing Page and get it looking as close to Netflix Landing Page as possible. You can only use HTML, CSS, JavaScript tools to complete the challenge, N:B; no library or framework.
 
 ### Solution
