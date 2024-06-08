@@ -12,8 +12,6 @@
 ## Overview
 
 ### The challenge
-
-![Design preview for the Social links profile coding challenge](./design/desktop-preview.jpg)
 Your challenge is to clone Netflix Landing Page and get it looking as close to Netflix Landing Page as possible. You can only use HTML, CSS, JavaScript tools to complete the challenge, N:B; no library or framework.
 
 ### Solution
@@ -39,7 +37,7 @@ CSS ::placeholder Selector:
 }
 ```
 
-```HTML, CSS, JavaSript
+```
 
 Collapsibles/Accordion
 
