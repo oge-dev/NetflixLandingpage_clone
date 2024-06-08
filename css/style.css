@@ -1,3 +1,4 @@
+/* Reset default margins and padding, apply box-sizing to all elements */
 *,
 html {
   margin: 0;
@@ -5,15 +6,16 @@ html {
   box-sizing: border-box;
 }
 
+/* Set default font and max-width for the body */
 body {
   font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
     sans-serif;
   max-width: 100%;
 }
 
-/* Header styling
-  ================================== */
+/* Header styling */
 header {
+  /* Apply gradient background with image overlay */
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.829),
@@ -25,50 +27,49 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  border-bottom: 8px solid #222;
+  border-bottom: 8px solid #222; /* Add a border at the bottom */
 }
 
+/* Styling for header content */
 header .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  width: 77%;
+  width: 77%; /* Set width of header content */
   padding: 1.2rem 0;
 }
 
+/* Styling for logo */
 .logo img {
   width: 158px;
   height: 48px;
 }
 
+/* Styling for sign-up button */
 .header-content .sign-btn {
+  /* Button appearance */
   text-decoration: none;
   color: #ffffff;
   background-color: #e50914;
   width: 76.91px;
   height: 32px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   display: flex;
   place-items: center;
   padding: 4px 16px;
   user-select: none;
   border-radius: 0.25rem;
   white-space: nowrap;
-  font-size: 14px;
-  font-weight: 600;
 }
-.header-content .sign-btn::after {
-  border-width: 0.0625rem;
-  border-radius: calc(0.25rem - 0.0625rem);
-  content: "";
-  border-color: rgba(0, 0, 0, 0);
-}
+
+/* Additional styling for sign-up button on hover */
 .header-content .sign-btn:hover {
   background: #b8000a;
   transition-duration: 250ms;
 }
+
 /* Hero Section */
 .hero-section {
   height: 100vh;
@@ -78,31 +79,39 @@ header .header-content {
   text-align: center;
 }
 
+/* Styling for content within hero section */
 .hero-section .hero-content {
   color: #ffffff;
-  padding: 200px;
+  padding: 200px; /* Add padding around hero content */
 }
 
+/* Styling for headings within hero section */
 .hero-section h1 {
   font-size: 3rem;
   font-weight: 900;
   line-height: 1.8;
 }
 
+/* Styling for paragraph text within hero section */
 .hero-section .hero-text p {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.8;
 }
 
+/* Styling for form controls */
 .form-control {
   margin-top: 1rem;
 }
+
+/* Styling for form headline */
 .form-control .form-headline {
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.5;
 }
+
+/* Styling for input controls within form */
 .form-control .input-control {
   display: flex;
   justify-content: center;
@@ -111,7 +120,9 @@ header .header-content {
   margin-top: 1.5rem;
 }
 
+/* Styling for input fields */
 .input-control input {
+  /* Input field appearance */
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.5);
   border: 1.5px solid #999;
@@ -124,15 +135,21 @@ header .header-content {
   height: 56px;
   border-radius: 0.25rem;
 }
+
+/* Additional styling for input field on focus */
 .input-control input:focus {
   border: 2px solid #ffffff;
   transition-duration: 250ms;
 }
+
+/* Styling for input field placeholder text */
 .input-control input::placeholder {
   color: #c1c1c2;
   font-weight: 400;
   font-size: 16px;
 }
+
+/* Styling for input button */
 .input-control .input-btn {
   display: flex;
   flex-direction: row;
@@ -152,15 +169,19 @@ header .header-content {
   line-height: 1;
 }
 
+/* Styling for text within input button */
 .input-control .input-btn p {
   font-size: 1.5rem;
   font-weight: 500;
   user-select: none;
   padding-right: 0.5rem;
 }
+
+/* Styling for icon within input button */
 .input-btn i {
   font-size: 1.2rem;
 }
+
 /* Enjoy on your TV. styling */
 .enjoy-section {
   display: flex;
