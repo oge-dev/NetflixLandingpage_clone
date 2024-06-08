@@ -267,15 +267,16 @@ header .header-content {
   background-color: black;
   border-bottom: 8px solid #222;
   color: #fff;
-  max-width: 100%;
   padding: 4.5rem 0;
 }
 
 .watch-content {
+  width: 100%;
+}
+.watch {
   width: 50%;
   padding-left: 16rem;
 }
-
 .watch-section h1 {
   font-size: 3rem;
   font-weight: 900;
@@ -288,7 +289,7 @@ header .header-content {
 }
 
 /* Enjoy on your TV. kids section- css */
-.kid-content img {
+.kids-img img {
   width: 474px;
   height: 355.5px;
   border: none;
@@ -308,17 +309,18 @@ header .header-content {
   margin: 0 auto;
   max-width: calc(83.33333333333334% - 6rem);
 }
+.fAQ-content h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 0.83em 0;
+}
 .fAQ-items {
   padding: 0;
   z-index: 1;
   width: 100%;
 }
-.fAQ-content h1 {
-  font-size: 3rem;
-  font-weight: 900;
-  margin: 0.83em 0;
-}
-/* Style for the collapsible */
+/* Style for the collapsible within Frequently Asked Questions section */
 .collapsible {
   background-color: #2d2d2d;
   color: #fff;
@@ -331,7 +333,7 @@ header .header-content {
   outline: none;
   position: relative;
   z-index: 1;
-  margin-bottom: 10px; /* Add bottom margin to the collapsible */
+  margin: 0 0 10px 0;
 }
 
 .collapsible:hover {
@@ -340,7 +342,6 @@ header .header-content {
 
 /* Style for the collapsible content */
 .content {
-  padding: 0 18px;
   display: none;
   overflow: hidden;
   background-color: #2d2d2d;
@@ -348,8 +349,7 @@ header .header-content {
   font-size: 1.5rem;
   font-weight: 400;
   transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s;
-  margin-top: -10px; /* Negative top margin to counteract the button's bottom margin */
-  margin-bottom: 10px;
+  margin: -10px 0 10px 0;
 }
 /* Style for the collapsible heading */
 .collapsible span:nth-of-type(1) {
@@ -382,22 +382,26 @@ header .header-content {
 /* footer styling */
 footer {
   font-size: 14px;
-  height: auto;
+  font-weight: 400;
   max-width: 100%;
-  background-color: black;
-  color: #777;
-  padding: 60px 0;
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 4.5rem 2rem;
 }
 
 .footer-content {
-  width: 70%;
+  width: 83%;
   margin: 0 auto;
 }
 
 footer h3 {
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.2rem;
 }
-
+footer h3 a {
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 600;
+}
 .footer-links {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -405,17 +409,13 @@ footer h3 {
 }
 
 footer a {
-  text-decoration: none;
-  color: #777;
-  justify-content: center;
-}
-
-footer a:hover {
-  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 footer .nig {
-  margin-top: 1.8rem;
+  margin-top: 1rem;
 }
 
 /* the styling displays when the screen width is less than or equal to 768px */
@@ -440,7 +440,6 @@ footer .nig {
     font-size: 2rem;
     font-weight: 700;
     line-height: normal;
-    /* margin-bottom: 1.5rem; */
   }
   .hero-section .hero-text p {
     line-height: normal;
@@ -478,6 +477,10 @@ footer .nig {
     height: 48px;
     font-size: 1rem;
     margin-top: 1rem;
+  }
+  .input-control .input-btn p {
+    font-size: 1.2rem;
+    padding-right: 0rem;
   }
   .hero-btn i {
     font-size: 1rem;
@@ -536,10 +539,12 @@ footer .nig {
   .watch-content {
     max-width: calc(100% - 3rem);
     margin: auto;
-    padding: 0 0;
     text-align: center;
   }
-
+  .watch {
+    width: 100%;
+    padding-left: 0;
+  }
   .watch-section h1 {
     font-size: 2rem;
     font-weight: 700;
@@ -550,41 +555,53 @@ footer .nig {
     font-size: 1.125rem;
     font-weight: 400;
   }
-  .kid-content img {
-    width: 322px;
-    height: 222px;
+  /* Enjoy on your TV. kids section- css */
+  .kids-content {
+    flex-direction: column-reverse;
   }
-
-  .fAQ-content {
-    max-width: 100%;
+  .kids-img img {
+    width: 272px;
+    height: 204px;
   }
-
+  /* Frequently Asked Questions section styling */
   .fAQ-section {
-    padding: 30px 15px;
+    padding: 3.5rem 0;
   }
-
-  .fAQ-item {
-    font-size: 18px;
+  .fAQ-content {
+    margin: auto;
+    max-width: calc(100% - 3rem);
   }
 
   .fAQ-section h1 {
-    font-size: 30px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
   }
 
-  .fAQ-section .form-control {
-    width: 80%;
+  .fAQ-items {
+    margin: 1.5rem 0 0;
   }
-
+  /* Style for the collapsible within Frequently Asked Questions section */
+  .collapsible {
+    margin: 0 0 0.5rem 0;
+  }
+  .content {
+    margin: -0.5rem 0 0.5rem 0;
+    font-size: 1.125rem;
+  }
+  .collapsible span:nth-of-type(1) {
+    font-size: 18px;
+  }
+  /* footer styling */
   footer {
-    padding: 50px 28px;
+    padding: 2rem 1.5rem;
   }
 
   .footer-content {
-    width: 90%;
+    width: 100%;
   }
 
   .footer-links {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 12px;
   }
 }
