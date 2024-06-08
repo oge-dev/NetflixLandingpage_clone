@@ -38,7 +38,7 @@ header .header-content {
 }
 
 .logo img {
- width: 158px;
+  width: 158px;
   height: 48px;
 }
 
@@ -149,7 +149,7 @@ header .header-content {
   width: 160.94px;
   height: 56px;
   letter-spacing: normal;
-    line-height: 1
+  line-height: 1;
 }
 
 .input-control .input-btn p {
@@ -175,6 +175,7 @@ header .header-content {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: auto;
 }
 
 .enjoy-text h1 {
@@ -216,11 +217,14 @@ header .header-content {
 
 /* Download your shows to watch offline. styling */
 
-.Download-content {
+.Download {
   position: relative;
 }
-
-.Download-content .stranger {
+.Download .mobile-img {
+  max-width: 546px;
+  height: 409.5px;
+}
+.Download-content .Download .stranger {
   max-width: 301px;
   width: 301px;
   height: 104px;
@@ -229,25 +233,30 @@ header .header-content {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  left: 125px;
-  bottom: 26px;
+  left: 122px;
+  bottom: 18px;
   border: 2px solid #222;
   background-color: black;
   padding: 8px 12px;
   border-radius: 18px;
 }
-.stranger-content {
+.stranger-text {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
-.stranger-content h4 {
+
+.stranger .boxshot-img {
+  width: 57.14px;
+  height: 80px;
+}
+.stranger-text h4 {
   font-weight: 500;
   font-size: 1rem;
 }
-.stranger-content p {
+.stranger-text p {
   color: #0071eb;
   font-size: 0.875rem;
   font-weight: 400;
@@ -419,15 +428,13 @@ footer .nig {
     width: 98px;
     height: 28px;
   }
-  .hero-section{
+  .hero-section {
     max-width: calc(100% - 3rem);
     margin: 0 auto;
   }
   .hero-section .hero-content {
     width: 100%;
     padding: 0;
-    
-   
   }
   .hero-section h1 {
     font-size: 2rem;
@@ -443,7 +450,6 @@ footer .nig {
   }
   .form-control {
     margin: 1.5rem 0 0;
-    
   }
   .form-control .form-headline {
     font-size: 1rem;
@@ -452,18 +458,15 @@ footer .nig {
     max-width: 61.5rem;
     margin: 0 auto;
     padding: 0 1.5rem;
-    content: '1';
-    
+    content: "1";
   }
   .form-control .input-control {
     flex-direction: column;
     max-width: 61.5rem;
     margin: 0 auto;
     padding: 0 1.5rem;
-    content: '1';
+    content: "1";
     margin: 1rem auto 0;
-    
-  
   }
 
   .input-control input {
@@ -473,44 +476,80 @@ footer .nig {
   }
   .input-control .input-btn {
     height: 48px;
-  font-size: 1rem;
+    font-size: 1rem;
     margin-top: 1rem;
   }
   .hero-btn i {
     font-size: 1rem;
   }
+  /* Enjoy on your TV. styling */
+  .enjoy-section {
+    padding: 3.5rem 0;
+  }
   .enjoy-content {
+    max-width: calc(100% - 3rem);
     flex-direction: column;
+    text-align: center;
   }
-
-  .tv-content img {
-    width: 280px;
-  }
-
-  /* .enjoy-text {
+  .enjoy-text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    z-index: 1;
     width: 100%;
-  } */
+  }
+  .enjoy-text p {
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+  .tv-container {
+    margin: 1.5rem 0 0;
+    padding-left: 0rem;
+  }
   .tv-frame {
-    position: relative;
-    width: 274px;
-    height: 359.5px;
+    width: 272px;
+    height: 208px;
   }
-  .Download-content img {
-    width: 300px;
-    height: 260px;
-  }
+  /* Download your shows to watch offline. styling */
 
-  .Download-content .stranger {
-    width: 80%;
+  .Download-content {
+    flex-direction: column-reverse;
+  }
+  .Download-content .Download .stranger {
     top: 152px;
-    left: 30px;
+    left: 0px;
+    max-width: 264.78px;
+    width: 264.78px;
+    height: 64px;
   }
-
+  .Download .mobile-img {
+    max-width: 272px;
+    height: 204px;
+  }
+  .stranger .boxshot-img {
+    width: 34.28px;
+    height: 48px;
+  }
+  /* Watch everywhere.. section styling */
+  .watch-section {
+    padding: 3.5rem 0;
+  }
   .watch-content {
-    max-width: 80%;
-    padding-left: 0;
+    max-width: calc(100% - 3rem);
+    margin: auto;
+    padding: 0 0;
+    text-align: center;
   }
 
+  .watch-section h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    z-index: 1;
+    width: 100%;
+  }
+  .watch-section p {
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
   .kid-content img {
     width: 322px;
     height: 222px;
